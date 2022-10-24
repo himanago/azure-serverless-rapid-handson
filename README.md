@@ -26,7 +26,7 @@ Azure アカウント・サブスクリプションと GitHub アカウントを
 
 作成したリポジトリの URL を `https://gitpod.io/#` の後ろにつけ、アクセスしてください。
 
-`https://gitpod.io/#https://github.com/<your account name>/azure-serverless-rapid-handson`
+`https://gitpod.io/#https://github.com/<your account name>/<your repository name>`
 
 起動には 10 分ほどかかります。
 
@@ -89,7 +89,7 @@ Azure ポータルから、Static Web Apps を作成してください。
   - ソース: `GitHub`
   - アカウント: 自身のアカウント
 - 組織: 自身のアカウントの組織
-- リポジトリ: `azure-serverless-rapid-handson`
+- リポジトリ: 自身が設定したリポジトリ名
 - 分岐: `main`
 - ビルドのプリセット: `Vue.js`
 - アプリの場所: `/swa/client`
