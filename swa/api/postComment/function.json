@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "document",
+      "type": "cosmosDB",
+      "databaseName": "CommentDB",
+      "collectionName": "Comments",
+      "connectionStringSetting": "COSMOSDB_CONNECTION_STRING",
+      "direction": "out"
+    }
+  ]
+}

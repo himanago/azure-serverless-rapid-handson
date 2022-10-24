@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "COSMOSDB_CONNECTION_STRING",
+      "databaseName": "CommentDB",
+      "collectionName": "Comments",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "type": "signalR",
+      "name": "signalRMessages",
+      "hubName": "comment",
+      "connectionStringSetting": "SIGNALR_CONNECTION_STRING",
+      "direction": "out"
+    }
+  ]
+}

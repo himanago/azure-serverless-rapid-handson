@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route":"getComments/{begin}/{end}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "documents",
+      "type": "cosmosDB",
+      "databaseName": "CommentDB",
+      "collectionName": "Comments",
+      "sqlQuery": "SELECT * from c WHERE c._ts >= StringToNumber({begin}) AND c._ts <= StringToNumber({end})",
+      "connectionStringSetting": "COSMOSDB_CONNECTION_STRING",
+      "direction": "in"
+    }
+  ]
+}

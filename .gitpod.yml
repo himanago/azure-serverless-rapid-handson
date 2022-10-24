@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - ms-vscode.azure-account
+    - ms-azuretools.vscode-azurefunctions
+    - ms-azuretools.vscode-bicep

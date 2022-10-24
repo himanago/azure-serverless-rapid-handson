@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "fitcareersysdevcosmosdb_DOCUMENTDB": "AccountEndpoint=https://fit-career-sys-dev-cosmosdb.documents.azure.com:443/;AccountKey=hU4aQDPdUe2ZoByhxs5cFPfidkim9KTGx4djDF55kEFUXQJFE1PpePzGtP37WpCayJUrApDic8wwlPLoHNni1g==;"
+  }
+}
